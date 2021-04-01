@@ -26,7 +26,8 @@ function onDeviceReady() {
     $("#add_task_button").click(addTask);
     $(document).on("click", ".destroy", deleteTask);
     $(document).on("click", ".toggle", markItemCompleted);
-    $("#chk_completed").click(MarkTaskCompleted);
+    
+
     
 
 
@@ -62,7 +63,7 @@ function onResume() {
   }
   
   function markItemCompleted() {
-    $(this).closest("li").toggleClass("completedItem");
+    $(this).closest("li").toggleClass("chk_completed");
   }
   
   
